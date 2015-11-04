@@ -1,1 +1,1 @@
-<div class=auth>Still Livin? {{sl}}<form name=register ng-submit=sl.api.register(data)><input type=email ng-model=data.name> <input type=password ng-model=data.password> <button type=submit>Login</button></form></div>
+<div class=auth>Still Livin? {{sl.data}}<form name=register ng-submit=sl.api.register(sl.data)><input type=email ng-model=sl.data.email> <input type=password ng-model=sl.data.password> <button type=submit>Register</button></form></div>

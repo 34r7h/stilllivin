@@ -14,7 +14,9 @@ angular.module('stilllivin')
 
         var api = {};
         console.log($stamplay);
+
         api.register = function(data){
+            console.log('register', data);
             var newUser = new $stamplay.User().Model;
             newUser.signup(data).then(function(){
                 // User is now registered
