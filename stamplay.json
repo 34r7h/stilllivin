@@ -1,0 +1,10 @@
+{
+  "appId": "stilllivin",
+  "apiKey": "a6d903b4f5d53c00ed28bbb7ddb21a7e5d0552942f522f3eaf3eabd2238c3be8",
+  "public": "./www",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

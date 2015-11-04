@@ -1,0 +1,11 @@
+node_modules
+dist
+platforms
+release
+.tmp
+app/styles/**/*.css
+app/styles/**/*.css.map
+.sass-cache
+bower_components
+app/bower_components
+*.log
