@@ -1,9 +1,23 @@
 <div class="auth">
-    Still Livin?
-    {{sl.data}}
-    <form name="register" ng-submit="sl.api.register(sl.data)">
-        <input type="email" ng-model="sl.data.email">
-        <input type="password" ng-model="sl.data.password">
-        <button type="submit">Register</button>
-    </form>
+    <h1>Still Livin?</h1>
+    <div ng-init="sl.api.currentUser()">
+        <form name="register" ng-submit="sl.api.register(sl.register.data)">
+            <h2>Register</h2>
+            <input type="email" ng-model="sl.register.data.email">
+            <input type="password" ng-model="sl.register.data.password">
+            <button type="submit">Register</button>
+        </form>
+        <form name="login" ng-submit="sl.api.login(sl.login.data)">
+            <h2>Login</h2>
+            <input type="email" ng-model="sl.login.data.email">
+            <input type="password" ng-model="sl.login.data.password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div>
+        <button ng-click="sl.api.logout()">Log out</button>
+    </div>
+    <div>
+        {{sl.api}}
+    </div>
 </div>

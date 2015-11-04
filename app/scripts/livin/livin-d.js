@@ -11,20 +11,14 @@ angular.module('stilllivin')
 {
     return {
         templateUrl: 'scripts/livin/livin-d.html',
-        
         restrict: 'EA',
-        scope: {
-
-        },
-        link: function (scope, el, attrs)
-        {
-
-        },
         controller: function ($scope)
         {
             var vm = this;
             vm.api = Api;
-            console.log(vm.api);
+            setTimeout(function () {
+                $scope.$apply();
+            },3000)
         },
         controllerAs: 'sl'
     };
